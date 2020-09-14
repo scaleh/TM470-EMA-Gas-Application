@@ -1,0 +1,89 @@
+<html>
+
+<!-- TM470 – The computing and IT project EMA Jonathan Paul Hill B283401X
+Date: July - September 2020
+Green Assessments & Screening (GAS) Application. A Health & Safety Application for persons who work with hazardous material and chemicals. -->
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <title>Gas Application</title>
+</head>
+
+<body>
+<div class="app">
+    <img src="img/gas.png" alt="The Gas Logo" width="250" height="250" class="image1">
+    <h1>Material Safety Data Sheet - Searchable</h1>
+    <p>Material Safety Data Sheets are documented information which provides details of the material.</p>
+
+    <div class="menu">
+        <p>Please type text in the search box below for the hazardous material MSDS you require or alternatively enter the company name:</p>
+
+        <input type="text" id="msds" onkeyup="searchMSDS()" placeholder="Material" title="Hazardous material"><br><br>
+        <input type="text" id="company" onkeyup="searchCompany()" placeholder="Company Name" title="Company Name"><br><br>
+
+        <table id="msdsTable">
+            <tr class="header">
+                <th style="width:60%;">Hazardous material</th>
+                <th style="width:30%;">Company</th>
+                <th style="width:10%;">MSDS Link</th>
+            </tr>
+            <tr>
+                <td>Interthane 990</td>
+                <td>International</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Interthane+990+MSDS.pdf">Link</a></td>
+            </tr>
+            <tr>
+                <td>Kerosene</td>
+                <td>Phillips 66</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Kerosene+-+Phillips+66.pdf">Link</a></td>
+            </tr>
+            <tr>
+                <td>Liquid Nitrogen</td>
+                <td>BOC 66</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Liquid+Nitrogen+MSDS.pdf">Link</a></td>
+            </tr>
+            <tr>
+                <td>Rust Guard</td>
+                <td>Jet-Lube</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Rust+Guard_SDS_EEA_En.pdf">Link</a></td>
+            </tr>
+            <tr>
+                <td>Thick Bleach</td>
+                <td>Unilever</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Unilever+Thick+Bleach.pdf">Link</a></td>
+            </tr>
+            <tr>
+                <td>Nitrogen trifluoride</td>
+                <td>Air Liquide</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Nitrogen+Trifluoride+-+Air+Liquid.pdf">Link</a></td>
+            </tr>
+            <tr>
+                <td>Nitrogen trifluoride</td>
+                <td>BOC</td>
+                <td><a href="https://jph493project.s3.eu-west-2.amazonaws.com/MSDS/Nitrogen+trifluoride+-+BOC.pdf">Link</a></td>
+            </tr>
+        </table>
+
+        <ul>
+            <li><a href="index.html">Main Menu</a></li><br>
+            <li><a href="msds.html">Previous Menu</a></li><br>
+            <br>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/search.js"></script>
+</body>
+
+</html>
